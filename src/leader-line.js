@@ -4995,6 +4995,7 @@
         elmPath.id = (pathId = id + '-path');
 
         elmText = document.createElementNS(SVG_NS, 'text');
+        elmText.classList.add('leader-line-end-label')
         elmTextPath = elmText.appendChild(document.createElementNS(SVG_NS, 'textPath'));
         elmTextPath.href.baseVal = '#' + pathId;
         elmTextPath.startOffset.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, 0);
